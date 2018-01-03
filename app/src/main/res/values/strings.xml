@@ -1,3 +1,33 @@
 <resources>
+    <!-- names of activities and applications for display purposes -->
     <string name="app_name">StarWarsApp</string>
+    <string name="activity_build_dice_pool">Build Dice Pool</string>
+    <string name="activity_manage_dice_pools">Manage Dice Pools</string>
+
+    <!-- used when building the dice pool -->
+    <string name="roll_dice">Roll</string>
+    <string name="clear_dice">Clear</string>
+
+    <!-- common default strings -->
+    <string name="view_visible_unknown">/?/?/?</string>
+    <string name="view_invisible_unknown"></string>
+
+    <!-- strings for the symbols on the faces of the dice -->
+    <string name="face_success">(s)</string>
+    <string name="face_advantage">(a)</string>
+    <string name="face_threat">(t)</string>
+    <string name="face_triumph">(x)</string>
+    <string name="face_despair">(y)</string>
+    <string name="face_failure">(f)</string>
+    <string name="face_lightside">(Z)</string>
+    <string name="face_darkside">(z)</string>
+
+    <!-- strings for the different dice type icons -->
+    <string name="die_ability">(d)</string>
+    <string name="die_proficiency">(C)</string>
+    <string name="die_difficulty">(d)</string>
+    <string name="die_challenge">(C)</string>
+    <string name="die_boost">(B)</string>
+    <string name="die_setback">(b)</string>
+    <string name="die_force">(B)</string>
 </resources>

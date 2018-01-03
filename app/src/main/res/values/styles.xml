@@ -1,11 +1,38 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimaryLight</item>
+        <item name="android:minHeight">@dimen/minSize</item>
+        <item name="android:minWidth">@dimen/minSize</item>
+    </style>
+    <style name="AppBackdrop" parent="AppTheme">
+        <item name="android:background">@drawable/star_field_portrait</item>
+    </style>
+    <style name="AppControlStyle" parent="AppTheme">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/colorPrimaryAccent</item>
+    </style>
+    <style name="EditFieldStyle">
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:src">@layout/blue_gradient_selector</item>
+        <item name="android:textColor">@color/colorPrimaryAccent</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="TextButtonStyle" parent="AppControlStyle">
+        <item name="android:src">@layout/blue_gradient_selector</item>
+    </style>
+    <style name="ImageButtonStyle" parent="AppControlStyle">
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:tint">@color/colorPrimaryAccent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="TextViewStyle" parent="AppControlStyle">
+        <item name="android:background">@layout/blue_gradient_selector</item>
     </style>
 
 </resources>

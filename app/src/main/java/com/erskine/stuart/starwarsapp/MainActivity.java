@@ -1,13 +1,25 @@
 package com.erskine.stuart.starwarsapp;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.FrameLayout;
 
-public class MainActivity extends AppCompatActivity {
+import com.erskine.stuart.starwarsapp.adapter.FacePoolAdapter;
+import com.erskine.stuart.starwarsapp.cells.FacePoolCell;
+import com.erskine.stuart.starwarsapp.dice.pools.DicePool;
+import com.erskine.stuart.starwarsapp.dice.pools.FacePool;
+import com.erskine.stuart.starwarsapp.dice.results.Die;
+import com.erskine.stuart.starwarsapp.dice.results.Face;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class MainActivity extends AppActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        BuildDicePoolActivity.start(this, null, 0);
     }
 }

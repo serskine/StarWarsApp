@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbars="vertical"
+    android:foregroundGravity="center_horizontal"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/theGroupsLayout"
+        >
+
+        <!-- Player Dice -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theAbilityLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theProficiencyLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theBoostLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+
+        <!-- Neutral dice -->
+        <com.google.android.flexbox.FlexboxLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/theForceLayout"
+            app:alignContent="space_between"
+            app:layout_flexGrow="1"
+            app:flexWrap="wrap"
+            >
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <!-- GM dice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theDifficultyLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theChallengeLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/theSetbackLayout"
+                app:alignContent="space_between"
+                app:layout_flexGrow="1"
+                app:flexWrap="wrap"
+                >
+            </com.google.android.flexbox.FlexboxLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
